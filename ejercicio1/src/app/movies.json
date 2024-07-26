@@ -1,0 +1,63 @@
+[
+    {
+        "id": 0,
+        "nombre": "Harry Potter y el prisionero de Azkaban",
+        "precio": 3.50,
+        "cantidad": 1
+    },
+    {
+        "id": 1,
+        "nombre": "Intensamente 2",
+        "precio": 4.50,
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Mi villano Favorito 4",
+        "precio": 3.50,
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "nombre": "El Señor de los Anillos: El Retorno del Rey",
+        "precio": 4.25,
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "La Vida es Bella",
+        "precio": 3.00,
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Psicosis",
+        "precio": 4.50,
+        "cantidad":1
+    },
+    {
+        "id": 6,
+        "nombre": "La Isla Siniestra",
+        "precio": 4.25,
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "nombre": "El Día después del Mañana",
+        "precio": 3.50,
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "nombre": "El Milagro del Padre Stu",
+        "precio": 4.50,
+        "cantidad": 1
+    },
+    {
+        "id": 9,
+        "nombre": "Coraline",
+        "precio": 4.00,
+        "cantidad": 1
+    }
+
+]
