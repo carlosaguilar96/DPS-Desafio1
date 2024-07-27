@@ -62,16 +62,19 @@ export const Select = () => {
     }
 
     return (
-        <div>
-            <select onChange={(e) => onSelectChange(e)} defaultValue="-1">
-                <option key="-1" value="-1">Elige la película</option>
+        <div className="subMenu">
+            <select onChange={(e) => onSelectChange(e)} defaultValue="-1" className="select">
+                <option key="-1" value="-1" className="option">Agregar Elemento</option>
 
                 {movies.map(pelicula => (
                     <option value={pelicula.id} key={pelicula.id}>{pelicula.nombre}</option>
                 ))}
 
             </select>
-            <button onClick={onAgregar}>Agregar</button>
+            <button onClick={onAgregar} className="btn agregar">Agregar</button>
+
+            <div className="blank">
+            </div>
 
             <div>
                 {moviesList.map((pelicula, llave) => (

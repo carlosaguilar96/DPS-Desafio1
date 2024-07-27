@@ -1,10 +1,13 @@
-import {Select} from "../components/Select.jsx";
+import { Select } from "../components/Select.jsx";
 
 export default function Home() {
   return (
     <main>
-      <h1>Lista de Compras de Películas</h1>
-      <Select></Select>
+
+      <div className="cuerpo">
+        <h1 className="titulo">Lista de Compras de Películas</h1>
+        <Select></Select>
+      </div>
     </main>
   );
 }

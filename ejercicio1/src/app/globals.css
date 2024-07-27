@@ -1,0 +1,94 @@
+html {
+    background-color: rgb(245, 245, 245);
+}
+
+.cuerpo {
+    margin: auto;
+    padding: 5px 20px;
+    width: 75%;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.subMenu {
+    margin: auto;
+    width: 65%;
+
+}
+
+.select {
+    height: 40px;
+    border-radius: 5px;
+    width: 45%;
+    font-size: 1em;
+    margin-right: 10%;
+    padding-left: 5px;
+}
+
+.option {
+    border-radius: 5px;
+
+}
+
+.btn {
+   
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    background-color: grey;
+    border: none;
+}
+
+.agregar{
+    height: 40px;
+    width: 45%;
+}
+
+.blank {
+    height: 150px;
+}
+
+.elementoP {
+    font-weight: 500;
+    font-size: 1.1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+}
+
+.elementoP p {
+    margin-top: 0;
+}
+
+.elementoP span {
+    font-weight: bold;
+}
+
+.elementoP input {
+    height: 25px;
+    width: 25%;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.derecha {
+    text-align: right;
+}
+
+.eliminar{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.total{
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: 500;
+
+}

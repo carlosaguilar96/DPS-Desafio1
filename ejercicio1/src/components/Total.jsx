@@ -27,8 +27,8 @@ export const Total = ({ peliculas, flag }) => {
     }
 
     return (
-        <div>
-            <p>Total: ${total}</p>
+        <div className="total">
+            <p>Total: <b>${total.toFixed(2)}</b></p>
         </div>
     )
 }
