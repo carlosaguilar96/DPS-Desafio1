@@ -107,6 +107,7 @@ header {
 .icon-close {
   width: 25px;
   height: 25px;
+  margin-left: 15px;
 }
 
 .icon-close:hover {
@@ -224,4 +225,9 @@ header {
 
 .descripcion{
   text-align: justify;
+}
+
+.inputCantidad{
+  width: 60px;
+  font-size: 16px;
 }

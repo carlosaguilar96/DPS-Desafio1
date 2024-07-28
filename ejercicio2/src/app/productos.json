@@ -1,0 +1,94 @@
+{
+    "productos": [
+        {
+            "id":1,
+            "categoria":1,
+            "nombre":"Alfombra",
+            "descripcion":"Alfombrilla de yoga de construcción corporal suave y cómoda. Está hecha de goma espuma (etileno acetato de vinilo).",
+            "precio":35,
+            "urlImage":"img/yoga-1.png",
+            "quantity":1
+        },
+        {
+            "id":2,
+            "categoria":2,
+            "nombre":"Espinilleras",
+            "descripcion":"Espinilleras de fútbol ligeras. Placa asimétrica con diseño anatómico. Refuerzo perforado y transpirable de espuma.",
+            "precio":30,
+            "urlImage":"img/futbol-1.png",
+            "quantity":1
+        },
+        {
+            "id":3,
+            "categoria":2,
+            "nombre":"Guantes para portero",
+            "descripcion":"Guante para porteros. Materiales de óptima calidad. Su corte y materiales permiten un adapte adecuado a la mano.",
+            "precio":30,
+            "urlImage":"img/futbol-2.png",
+            "quantity":1
+        },
+        {
+            "id":4,
+            "categoria":2,
+            "nombre":"Red de portería",
+            "descripcion":"Red para porterias Milan de excelente calidad. Dimenciones: 24 x 8 x 4 x 10. Material: Poliéster",
+            "precio":30,
+            "urlImage":"img/futbol-3.png",
+            "quantity":1
+        },
+        {
+            "id":5,
+            "categoria":3,
+            "nombre":"Mochila Adidas",
+            "descripcion":"100% poliéster. Cierre de Cremallera. Bolsa duradera y compacta. Correa de hombro ajustable.",
+            "precio":50,
+            "urlImage":"img/mochila-1.png",
+            "quantity":1
+        },
+        {
+            "id":6,
+            "categoria":3,
+            "nombre":"Mochila Nike",
+            "descripcion":"100% poliéster reciclado. Las correas para los hombros y la espalda están acolchadas para mayor comodidad.",
+            "precio":50,
+            "urlImage":"img/mochila-2.png",
+            "quantity":1
+        },
+        {
+            "id":7,
+            "categoria":4,
+            "nombre":"Camiseta para ciclismo",
+            "descripcion":"Camiseta para protegerse del sol. Costuras planas para un ajuste cómodo al cuerpo.",
+            "precio":25,
+            "urlImage":"img/ciclismo-1.png",
+            "quantity":1
+        },
+        {
+            "id":8,
+            "categoria":4,
+            "nombre":"Casco para ciclismo",
+            "descripcion":"Construcción ligera en molde, 20 rejillas de ventilación fijas para un flujo de aire constante.",
+            "precio":25,
+            "urlImage":"img/ciclismo-2.png",
+            "quantity":1
+        },
+        {
+            "id":9,
+            "categoria":5,
+            "nombre":"Guante para boxeo",
+            "descripcion":"Cordón de agarre en el interior para mayor poder de agarre y protección. Muñeca acolchada reforzada.",
+            "precio":20,
+            "urlImage":"img/boxeo-1.png",
+            "quantity":1
+        },
+        {
+            "id":10,
+            "categoria":5,
+            "nombre":"Pera de boxeo",
+            "descripcion":"100% Cuero Sintético. Diseño de pera especializado para mayor enfoque en el objetivo.",
+            "precio":20,
+            "urlImage":"img/boxeo-2.png",
+            "quantity":1
+        }
+    ]
+}

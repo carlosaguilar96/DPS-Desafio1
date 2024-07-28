@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
 import Swal from 'sweetalert2';
+import { CartDetail } from '@/components/CartDetail';
 export const Headers = ({
     allProducts,
     setAllProducts,
@@ -12,23 +13,25 @@ export const Headers = ({
     const [active, setActive] = useState(false);
     const onDeleteProduct = product => {
         Swal.fire({
-            title: "¿Está seguro que desea eliminar el artículo?",
+            title: "¿Está seguro que desea eliminar el artículo "+product.nombre+"?",
             icon: "warning",
             showCancelButton: true,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Borrar"
+            confirmButtonColor: "#d33",
+            cancelButtonColor: "#deb887",
+            confirmButtonText: "Eliminar",
+            cancelButtonText: "Cancelar"
         }).then((result) => {
             if (result.isConfirmed) {
                 const results = allProducts.filter(
                     item => item.id !== product.id
                 );
-                setTotal(total - product.price * product.quantity);
+                setTotal(total - product.precio * product.quantity);
                 setCountProducts(countProducts - product.quantity);
                 setAllProducts(results);
                 Swal.fire({
                     title: "Artículo eliminado",
-                    icon: "success"
+                    icon: "success",
+                    confirmButtonColor: "#deb887"
                 });
             }
         });
@@ -38,9 +41,10 @@ export const Headers = ({
             title: "¿Está seguro que desea vaciar el carrito?",
             icon: "warning",
             showCancelButton: true,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Vaciar"
+            confirmButtonColor: "#d33",
+            cancelButtonColor: "#deb887",
+            confirmButtonText: "Vaciar",
+            cancelButtonText: "Cancelar"
         }).then((result) => {
             if (result.isConfirmed) {
                 setAllProducts([]);
@@ -48,10 +52,25 @@ export const Headers = ({
                 setCountProducts(0);
                 Swal.fire({
                     title: "Carrito vacío",
-                    icon: "success"
+                    icon: "success",
+                    confirmButtonColor: "#deb887"
                 });
             }
         });
+    };
+    const cambiarCantidad = product => {
+        if (allProducts.find(item => item.id === product.id)) {
+            var cantidad = parseInt(document.getElementById('inputCantidad'+product.id).value);
+            console.log(cantidad);
+            const products = allProducts.map(item => item.id === product.id ? { ...item, quantity: cantidad }: item);
+            console.log(product.quantity);
+            setTotal(total + product.precio);
+            setCountProducts(countProducts + 1);
+            return setAllProducts([...products]);
+        }
+        setTotal(total + product.precio * product.quantity);
+        setCountProducts(countProducts + product.quantity);
+        setAllProducts([...allProducts, product]);
     };
     return (
         <header>
@@ -67,17 +86,17 @@ export const Headers = ({
                     {allProducts.length ? (
                     <>
                         <div className='row-product'>
-                            {allProducts.map(product => (
-                                <div className='cart-product' key={product.id}>
-                                    <div className='info-cart-product'>
-                                        <span className='cantidad-producto-carrito'>{product.quantity}</span>
-                                        <img src={product.urlImage} className="icon-cart"></img>
-                                        <p className='titulo-producto-carrito'>{product.title}</p>
-                                        <span className='precio-producto-carrito'>${product.price}</span>
+                                {allProducts.map(product => (
+                                    <div className='cart-product' key={product.id}>
+                                        <CartDetail 
+                                            product={product}
+                                        />
+                                        <div>
+                                            <img src="https://static.vecteezy.com/system/resources/previews/018/887/462/original/signs-close-icon-png.png" alt="cerrar" className="icon-close" onClick={() => onDeleteProduct(product)}/><br/><br/>
+                                            <input id={"inputCantidad"+product.id} type="number" value={product.quantity} min="1" className='inputCantidad' onChange={() => cambiarCantidad(product)}></input>  
+                                        </div>
                                     </div>
-                                    <img src="https://static.vecteezy.com/system/resources/previews/018/887/462/original/signs-close-icon-png.png" alt="cerrar" className="icon-close" onClick={() => onDeleteProduct(product)}/>
-                                </div>
-                            ))}
+                                ))}
                         </div>
                         <div className='cart-total'>
                             <h3>Total:</h3>
