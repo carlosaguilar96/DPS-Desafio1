@@ -62,14 +62,20 @@ export const Headers = ({
         if (allProducts.find(item => item.id === product.id)) {
             var cantidad = parseInt(document.getElementById('inputCantidad'+product.id).value);
             console.log(cantidad);
-            const products = allProducts.map(item => item.id === product.id ? { ...item, quantity: cantidad }: item);
-            console.log(product.quantity);
-            setTotal(total + product.precio);
-            setCountProducts(countProducts + 1);
-            return setAllProducts([...products]);
+                const products = allProducts.map(item => item.id === product.id ? { ...item, quantity: cantidad }: item);
+                if(cantidad>product.quantity){
+                  setTotal(total + product.precio);
+                  setCountProducts(countProducts + 1);
+                }
+                else{
+                  setTotal(total - product.precio);
+                  setCountProducts(countProducts - 1);
+                }
+                return setAllProducts([...products]);
+            
         }
-        setTotal(total + product.precio * product.quantity);
-        setCountProducts(countProducts + product.quantity);
+        setTotal(total + product.precio * cantidad);
+        setCountProducts(countProducts + cantidad);
         setAllProducts([...allProducts, product]);
     };
     return (
