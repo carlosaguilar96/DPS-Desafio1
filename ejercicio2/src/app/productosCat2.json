@@ -1,0 +1,28 @@
+{
+    "productosCat2": [
+        {
+            "id":2,
+            "nombre":"Espinilleras",
+            "descripcion":"Espinilleras de fútbol ligeras. Placa asimétrica con diseño anatómico. Refuerzo perforado y transpirable de espuma.",
+            "precio":30,
+            "urlImage":"img/futbol-1.png",
+            "quantity":1
+        },
+        {
+            "id":3,
+            "nombre":"Guantes para portero",
+            "descripcion":"Guante para porteros. Materiales de óptima calidad. Su corte y materiales permiten un adapte adecuado a la mano.",
+            "precio":30,
+            "urlImage":"img/futbol-2.png",
+            "quantity":1
+        },
+        {
+            "id":4,
+            "nombre":"Red de portería",
+            "descripcion":"Red para porterias Milan de excelente calidad. Dimenciones: 24 x 8 x 4 x 10. Material: Poliéster",
+            "precio":30,
+            "urlImage":"img/futbol-3.png",
+            "quantity":1
+        }
+    ]
+}

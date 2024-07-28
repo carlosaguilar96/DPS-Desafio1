@@ -1,0 +1,20 @@
+{
+    "productosCat5": [
+        {
+            "id":9,
+            "nombre":"Guante para boxeo",
+            "descripcion":"Cordón de agarre en el interior para mayor poder de agarre y protección. Muñeca acolchada reforzada.",
+            "precio":20,
+            "urlImage":"img/boxeo-1.png",
+            "quantity":1
+        },
+        {
+            "id":10,
+            "nombre":"Pera de boxeo",
+            "descripcion":"100% Cuero Sintético. Diseño de pera especializado para mayor enfoque en el objetivo.",
+            "precio":20,
+            "urlImage":"img/boxeo-2.png",
+            "quantity":1
+        }
+    ]
+}

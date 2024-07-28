@@ -1,0 +1,12 @@
+{
+    "productosCat1": [
+        {
+            "id":1,
+            "nombre":"Alfombra",
+            "descripcion":"Alfombrilla de yoga de construcción corporal suave y cómoda. Está hecha de goma espuma (etileno acetato de vinilo).",
+            "precio":35,
+            "urlImage":"img/yoga-1.png",
+            "quantity":1
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "productosCat4": [
+        {
+            "id":7,
+            "nombre":"Camiseta para ciclismo",
+            "descripcion":"Camiseta para protegerse del sol. Costuras planas para un ajuste cómodo al cuerpo.",
+            "precio":25,
+            "urlImage":"img/ciclismo-1.png",
+            "quantity":1
+        },
+        {
+            "id":8,
+            "nombre":"Casco para ciclismo",
+            "descripcion":"Construcción ligera en molde, 20 rejillas de ventilación fijas para un flujo de aire constante.",
+            "precio":25,
+            "urlImage":"img/ciclismo-2.png",
+            "quantity":1
+        }
+    ]
+}

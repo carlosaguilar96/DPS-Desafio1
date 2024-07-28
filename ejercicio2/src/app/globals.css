@@ -9,7 +9,7 @@
 
 body {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 100%;
   font-family: "Lato";
   color: #333;
 }
@@ -32,7 +32,10 @@ img {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0 40px 0;
+  padding: 30px 25px 40px 25px;
+  background-color: burlywood;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .container-icon {
@@ -143,10 +146,14 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  width:80%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .item {
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .item:hover {
@@ -180,13 +187,14 @@ header {
 .price {
   font-size: 18px;
   font-weight: 900;
+  text-align: center;
 }
 
 .info-product button {
   border: none;
   background: none;
-  background-color: #000;
-  color: #fff;
+  background-color:rgb(222, 184, 135);
+  color: black;
   padding: 15px 10px;
   cursor: pointer;
 }
@@ -212,4 +220,8 @@ header {
 
 .hidden {
   display: none;
+}
+
+.descripcion{
+  text-align: justify;
 }

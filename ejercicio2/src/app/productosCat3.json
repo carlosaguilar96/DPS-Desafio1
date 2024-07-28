@@ -1,0 +1,20 @@
+{
+    "productosCat3": [
+        {
+            "id":5,
+            "nombre":"Mochila Adidas",
+            "descripcion":"100% poliéster. Cierre de Cremallera. Bolsa duradera y compacta. Correa de hombro ajustable.",
+            "precio":50,
+            "urlImage":"img/mochila-1.png",
+            "quantity":1
+        },
+        {
+            "id":6,
+            "nombre":"Mochila Nike",
+            "descripcion":"100% poliéster reciclado. Las correas para los hombros y la espalda están acolchadas para mayor comodidad.",
+            "precio":50,
+            "urlImage":"img/mochila-2.png",
+            "quantity":1
+        }
+    ]
+}
